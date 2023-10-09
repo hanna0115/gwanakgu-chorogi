@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './HomePage.css';
 
 const HomePage = () => {
   const collectionBox = [
@@ -13,13 +14,13 @@ const HomePage = () => {
       to : '/batteries',
       title : '폐건전지, 형광등',
       img : '/images/battery.png',
-      text : '그냥 버리면 환경오염<br/>제대로 수거하면 재활용 가능!'
+      text : '그냥 버리면 환경오염\n제대로 수거하면 재활용 가능!'
     },
     {
       to : '/saveTheEarth',
       title : '지구 살리기 Tip',
       img : '/images/earth.png',
-      text : '환경도 살리고<br/>돈도 벌 수 있다고?'
+      text : '환경도 살리고\n돈도 벌 수 있다고?'
     }
   ]
 
@@ -45,15 +46,15 @@ const HomePage = () => {
     <div>
       <main>
         <section className='collection-box'>
-          <div className="collotion-box-info">
+          <div className="collection-box-info">
             <h2>환경 보호를 위한<br/>쓰레기 수거함 위치를 안내해드립니다.</h2>
-            <div className="colletion-box-list">
+            <div className="collection-box-list">
             {
                 collectionBox.map((item, index) => {
                   return (
-                    <div className="colletion-box-item" key={index}>
+                    <div className="collection-box-item" key={index}>
                       <Link to={item.to}>
-                        <p>{item.title}</p>
+                        <p className='title'>{item.title}</p>
                         <img src={item.img} alt={item.title} />
                         <p>{item.text}</p>
                       </Link>
@@ -62,9 +63,6 @@ const HomePage = () => {
                 })
               }
             </div>
-          </div>
-          <div className="character">
-            <img src="/images/mainCharacter.png" alt="mainCharacter" />
           </div>
         </section>
         
