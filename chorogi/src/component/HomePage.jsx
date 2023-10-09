@@ -22,6 +22,25 @@ const HomePage = () => {
       text : '환경도 살리고<br/>돈도 벌 수 있다고?'
     }
   ]
+
+  const carbonNeutral = [
+    {
+      to : '',
+      title : '가정',
+      img : '/images/home.png'
+    },
+    {
+      to : '',
+      title : '학교',
+      img : '/images/school.png'
+    },
+    {
+      to : '',
+      title : '회사',
+      img : '/images/company.png'
+    }
+  ]
+
   return (
     <div>
       <main>
@@ -32,7 +51,7 @@ const HomePage = () => {
             {
                 collectionBox.map((item, index) => {
                   return (
-                    <div className="colletion-box-item">
+                    <div className="colletion-box-item" key={index}>
                       <Link to={item.to}>
                         <p>{item.title}</p>
                         <img src={item.img} alt={item.title} />
@@ -46,6 +65,37 @@ const HomePage = () => {
           </div>
           <div className="character">
             <img src="/images/mainCharacter.png" alt="mainCharacter" />
+          </div>
+        </section>
+        
+        <section className="carbon-neutral">
+          <div className="carbon-neutral-text">
+            <p>탄소중립 생활 실천</p>
+            <h2>일상 속 친환경 소비<br/>실천 수칙을 알아볼까요?</h2>
+            <p>누구나 언제·어디서든 탄소중립을 실천할 수 있어요!</p>
+          </div>
+          <div className="card-list">
+            {
+              carbonNeutral.map((item, index) => {
+                return (
+                  <div className="card-item" key={index}>
+                    <h3>#{item.title}에서</h3>
+                    <div className="caption">
+                      <ul>
+                        <li>난방온도 2도 낮추고 냉방온도 2도 높이기</li>
+                        <li>전기밥솥 보온기능 사용 줄이기</li>
+                        <li>냉장고 적정용량 유지하기</li>
+                        <li>비데 절전기능 사용하기</li>
+                        <li>물은 받아서 사용하기</li>
+                        <li>텔레비전 시청 시간 줄이기</li>
+                      </ul>
+                      <button><Link to={item.to}>자세히 보기</Link></button>
+                    </div>
+                    <img src={item.img} alt={item.title} />
+                  </div>
+                )
+              })
+            }
           </div>
         </section>
       </main>
