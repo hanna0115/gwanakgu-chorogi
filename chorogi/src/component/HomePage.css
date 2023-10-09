@@ -1,0 +1,48 @@
+.collection-box {
+  height: 600px;
+  background-image: url('./mainBack.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.collection-box-info {
+  margin: 115px 0 140px 125px;
+}
+
+.collection-box h2 {
+  font-size: 50px;
+  color: #555;
+}
+
+.collection-box-list {
+  display: flex;
+  margin-top: 40px;
+}
+
+.collection-box-item {
+  width: 267px;
+  height: 276px;
+  margin-right: 25px;
+  border: 1px solid #0F9253;
+  text-align: center;
+  white-space: pre-line;
+  background-color: #fff;
+}
+
+.collection-box-item:last-child {
+  margin-right: 0;
+}
+
+.collection-box-item .title {
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #185808;
+}
+
+.collection-box-item img {
+  width: 80px;
+  height: 80px;
+  margin: 25px 0 20px 0;
+}
