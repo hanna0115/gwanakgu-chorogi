@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.css';
+import './Header.css';
 
-const Nav = () => {
+const Header = () => {
   const menuItems = document.querySelectorAll('.gnb > li');
 
   menuItems.forEach(function(item){
@@ -66,4 +66,4 @@ const Nav = () => {
 };
 
 
-export default Nav;
+export default Header;
