@@ -26,7 +26,7 @@ const Header = () => {
           </Link>
         </h1>
         <h1 className="visually-hidden">메뉴</h1>
-        <ul className="gnb ative">
+        <ul className="gnb">
           <li><Link to=''>탄소중립이란?</Link>
             <img className='sprout' src="/images/sprout.png" alt="" />
             <ul className="sub">
