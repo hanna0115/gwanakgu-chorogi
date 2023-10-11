@@ -7,19 +7,19 @@ const HomePage = () => {
     {
       to : '/clothes',
       title : '의류',
-      img : '/images/clothes.png',
+      img : '/images/icon-clothes-9752702.png',
       text : '바르게 알고 바르게 버려요!'
     },
     {
       to : '/batteries',
       title : '폐건전지, 형광등',
-      img : '/images/battery.png',
+      img : '/images/icon-light bulb and research.png',
       text : '그냥 버리면 환경오염\n제대로 수거하면 재활용 가능!'
     },
     {
       to : '/saveTheEarth',
       title : '지구 살리기 Tip',
-      img : '/images/earth.png',
+      img : '/images/icon-planet-earth-1542833.png',
       text : '환경도 살리고\n돈도 벌 수 있다고?'
     }
   ]
