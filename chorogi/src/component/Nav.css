@@ -14,19 +14,19 @@ a {
 
 header{
   text-align: center;
-  margin: 20px;
+  margin: 0 50px;
 }
 
 nav{
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 
 .logo img {
   width: 100px;
-  margin: 50px;
+  margin: 30px;
 }
 
 .visually-hidden {
@@ -37,6 +37,7 @@ nav{
   display: flex;
   margin: 50px;
   padding: 0 250px;
+  position: relative;
 }
 
 .gnb > li {
@@ -47,16 +48,26 @@ nav{
 
 .gnb > li > a { 
   display: block;
-  padding: 10px 30px;
+  padding: 0 40px;
   color: #32785E;
   font-weight: 700;
-  transition: background-color 300ms ease-in-out;
   font-size: 20px;
 }
-.gnb > li > a:hover,
-.gnb > li > a.on {
-  background-color: rgb(255, 255, 255);
+
+.gnb :hover 
+.sprout {
+  display: block;
 }
+
+.sprout {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 36px;
+}
+
 
 .sub {
   position: absolute;
@@ -73,8 +84,7 @@ nav{
 .sub li a {
   display: block;
   padding: 10px;
-  transition: background-color 300ms ease-in-out;
-  width: 150px;
+  width: 180px;
   margin: 20px auto;
   padding: 5px;
   border-radius: 50px;
@@ -93,8 +103,8 @@ nav{
   display: flex;
   width: 100%;
   position: absolute;
-  top: 85px;
-  left: 83%;
+  top: 65px;
+  left: 81%;
 }
 
 .weather,
