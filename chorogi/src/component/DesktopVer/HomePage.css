@@ -139,5 +139,6 @@
 
 .card-item img {
   position: absolute;
+  display: none;
   width: 300px;
 }
