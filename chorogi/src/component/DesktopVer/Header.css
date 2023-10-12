@@ -54,7 +54,7 @@ nav{
   font-size: 20px;
 }
 
-.gnb :hover 
+.gnb li:hover 
 .sprout {
   display: block;
 }
@@ -77,11 +77,11 @@ nav{
   transition: max-height 500ms ease-in-out;
 }
 
-.sub.active {
+.active {
   max-height: 270px;
 }
 
-.sub li a {
+.sub a {
   display: block;
   padding: 10px;
   width: 180px;
@@ -103,8 +103,9 @@ nav{
   display: flex;
   width: 100%;
   position: absolute;
-  top: 65px;
-  left: 81%;
+  top: 55px;
+  left: 83%;
+  font-size: 14px;
 }
 
 .weather,
