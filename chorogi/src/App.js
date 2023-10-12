@@ -1,8 +1,8 @@
 import { BrowserRouter, Outlet } from 'react-router-dom';
 import './App.css';
-import Loding from './component/MobileVer/Loding';
-import Header from './component/MobileVer/Header';
-import Footer from './component/MobileVer/Footer';
+import Loding from './device/MobileVer/Loding';
+import Header from './device/MobileVer/Header';
+import Footer from './device/MobileVer/Footer';
 
 function App() {
   return (
