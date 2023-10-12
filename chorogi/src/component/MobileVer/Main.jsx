@@ -1,12 +1,19 @@
 import React from 'react';
 import './Main.css';
-import { Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './Main/HomePage';
+import Map from './Main/Map';
+import Detail from './Main/Detail';
 
 const Main = () => {
   return (
     <div>
       <Routes>
-        <Route index path='/' />
+        <Route path='/' element={<App/>}>
+          <Route index element={<HomePage/>} />
+          <Route path='map' element={<Map/>} />
+          <Route path='detail' element={<Detail/>} />
+        </Route>
       </Routes>
     </div>
   );
