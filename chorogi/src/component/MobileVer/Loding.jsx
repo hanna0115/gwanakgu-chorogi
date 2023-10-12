@@ -3,9 +3,9 @@ import './Loding.css';
 
 const Loding = () => {
   return (
-    <header>
+    <div>
       
-    </header>
+    </div>
   );
 };
 
