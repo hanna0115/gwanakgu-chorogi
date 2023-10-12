@@ -1,4 +1,5 @@
 import React from 'react';
+import './Loding.css';
 
 const Loding = () => {
   return (
