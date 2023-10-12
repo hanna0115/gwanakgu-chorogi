@@ -1,12 +1,12 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Loding from './component/Mobile/Loding';
+import Header from './component/DesktopVer/Header';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Loding/>
+        <Header/>
       </div>
     </BrowserRouter>
   );
