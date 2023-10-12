@@ -17,3 +17,7 @@ button {
   border: none;
   background-color: transparent;
 }
+
+body {
+  width: 320px;
+}
