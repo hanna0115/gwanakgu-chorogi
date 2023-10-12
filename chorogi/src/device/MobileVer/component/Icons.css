@@ -1,0 +1,58 @@
+.quick-menu h2 {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4A4A4A;
+}
+
+.quick-menu h2 span {
+  font-weight: 700;
+  color: #2F973A;
+}
+
+.quick-menu-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.quick-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 0;
+}
+
+.quick-menu-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  margin: 0 19px;
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+}
+
+.quick-menu-item div img {
+  width: 40px;
+  height: 40px;
+}
+
+.quick-menu-item p {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #185808;
+}
+
+.quick-menu > img {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  margin-top: -10px;
+}
