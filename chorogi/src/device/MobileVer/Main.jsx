@@ -1,20 +1,17 @@
 import React from 'react';
+import {  Outlet } from 'react-router-dom';
 import './Main.css';
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './page/HomePage';
-import Map from './page/Map';
-import Detail from './page/Detail';
+import Header from './Header';
+import Footer from './Footer';
 
 const Main = () => {
   return (
     <div>
-      <Routes>
-        <Route path='/' element={<App/>}>
-          <Route index element={<HomePage/>} />
-          <Route path='map' element={<Map/>} />
-          <Route path='detail' element={<Detail/>} />
-        </Route>
-      </Routes>
+      <Header/>
+        <main>
+          <Outlet/>
+        </main>
+        <Footer/>
     </div>
   );
 };
