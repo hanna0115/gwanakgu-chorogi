@@ -9,11 +9,11 @@ const Header = () => {
   return (
     <header>
       <h1 className="logo">
-          <Link to href="">
+          <Link to="">
             <img src="/images/logo_black.png" alt="logo-img" />
           </Link>
       </h1>
-      <nav class="gnb-icon-btn">
+      <nav className="gnb-icon-btn">
         <button>
           <FontAwesomeIcon icon={faBars} />
           <FontAwesomeIcon icon={faX} />
