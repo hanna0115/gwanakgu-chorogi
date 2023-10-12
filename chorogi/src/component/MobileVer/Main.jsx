@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import { Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const Main = () => {
   return (
