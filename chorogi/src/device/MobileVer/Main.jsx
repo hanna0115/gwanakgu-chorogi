@@ -1,9 +1,9 @@
 import React from 'react';
 import './Main.css';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from './Main/HomePage';
-import Map from './Main/Map';
-import Detail from './Main/Detail';
+import HomePage from './page/HomePage';
+import Map from './page/Map';
+import Detail from './page/Detail';
 
 const Main = () => {
   return (
