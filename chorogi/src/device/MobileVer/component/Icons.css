@@ -1,8 +1,8 @@
 .quick-menu h2 {
-  margin-top: 20px;
+  margin-top: 2rem;
   text-align: center;
-  line-height: 30px;
-  font-size: 20px;
+  line-height: 3rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #4A4A4A;
 }
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 25px;
+  margin-top: 2.5rem;
 }
 
 .quick-menu-item {
@@ -24,35 +24,38 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px 0;
+  margin: 0.5rem 0;
 }
 
 .quick-menu-item div {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75px;
-  height: 75px;
-  margin: 0 19px;
-  border: 1px solid #C4C4C4;
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 1.9rem;
   border-radius: 50%;
+  background-color: #7AD65F;
 }
 
-.quick-menu-item div img {
-  width: 40px;
-  height: 40px;
+.quick-menu-item div svg {
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
 }
 
 .quick-menu-item p {
-  margin-top: 5px;
-  font-size: 13px;
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #185808;
 }
 
-.quick-menu > img {
-  position: absolute;
-  right: 0;
-  width: 200px;
-  margin-top: -10px;
+.img-box {
+  text-align: end;
+}
+
+.img-box img {
+  width: 20rem;
+  margin-top: -1rem;
 }
