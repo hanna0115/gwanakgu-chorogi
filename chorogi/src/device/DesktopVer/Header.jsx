@@ -6,21 +6,6 @@ const Header = () => {
 
   let [state,setState] = useState(false);
 
-  // const menuItems = document.querySelectorAll('.gnb > li');
-
-  // menuItems.forEach(function(item){
-  //   const subMenu = item.querySelector('.sub');
-  
-  //   item.addEventListener('mouseover', function(){
-  //     subMenu.classList.add('active');
-  //   })
-  
-  //   // mouseleave
-  //   item.addEventListener('mouseleave', function(){
-  //     subMenu.classList.remove('active');
-  //   })
-  // })
-
   return (
     <header>
       <nav>
