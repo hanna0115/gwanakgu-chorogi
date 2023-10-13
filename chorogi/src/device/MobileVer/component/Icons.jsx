@@ -1,27 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Icons.css';
+import { Icon } from '@iconify/react';
 
 const Icons = () => {
   const quickMenu = [
     {
       title : '의류',
-      icon : '/images/icon-clothes-9752702.png',
+      icon : 'iconoir:t-shirt',
       to : '/clothes'
     },
     {
       title : '폐건전지‧형광등',
-      icon : '',
+      icon : 'clarity:battery-line',
       to : '/batteries-fluorescent lights'
     },
     {
       title : '네프론',
-      icon : '',
+      icon : 'guidance:plastic',
       to : '/nephron'
     },
     {
       title : '기부하기',
-      icon : '',
+      icon : 'ph:heart',
       to : '/donation'
     }
   ]
@@ -40,7 +41,7 @@ const Icons = () => {
               <div className="quick-menu-item" key={index}>
                 <Link to={item.to}>
                   <div>
-                    <img src={item.icon} alt={item.title} />
+                    <Icon icon={item.icon} />
                   </div>
                 </Link>
                 <p>{item.title}</p>
@@ -49,7 +50,9 @@ const Icons = () => {
           })
         }
       </div>
-      <img src="/images/plastic bottle.png" alt="main character" />
+      <div className='img-box'>
+        <img src="/images/plastic bottle.png" alt="main character" />
+      </div>
     </section>
   );
 };
