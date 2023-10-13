@@ -1,3 +1,8 @@
+:root {
+  --main-txt-color: #2F973A;
+  --sub-txt-color: #555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #555;
 }
 
 li {
@@ -18,8 +23,9 @@ button {
   background-color: transparent;
 }
 
-body {
+html {
   position: relative;
   width: 320px;
   margin: 0 auto;
+  font-size: 10px;
 }
