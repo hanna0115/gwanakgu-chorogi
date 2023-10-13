@@ -39,8 +39,7 @@
 }
 
 .quick-menu-item div svg {
-  width: 4rem;
-  height: 4rem;
+  font-size: 4rem;
   color: #fff;
 }
 
