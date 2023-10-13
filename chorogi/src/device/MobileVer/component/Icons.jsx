@@ -8,22 +8,22 @@ const Icons = () => {
     {
       title : '의류',
       icon : 'iconoir:t-shirt',
-      to : '/clothes'
+      to : '/Clothes'
     },
     {
       title : '폐건전지‧형광등',
       icon : 'clarity:battery-line',
-      to : '/batteries-fluorescent lights'
+      to : '/Batteries-Fluorescent-lights'
     },
     {
       title : '네프론',
       icon : 'guidance:plastic',
-      to : '/nephron'
+      to : '/Nephron'
     },
     {
       title : '기부하기',
       icon : 'ph:heart',
-      to : '/donation'
+      to : '/Donation'
     }
   ]
 

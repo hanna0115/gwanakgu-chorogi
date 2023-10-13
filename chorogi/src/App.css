@@ -1,6 +1,5 @@
 :root {
   --main-txt-color: #32785E;
-  --sub-txt-color: #555;
 }
 
 * {
@@ -28,4 +27,5 @@ html {
   width: 320px;
   margin: 0 auto;
   font-size: 10px;
+  color: #555;
 }
