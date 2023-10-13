@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import './Main.css';
+import './Index.css';
 import Header from './Header';
 import Footer from './Footer';
 
-const Main = () => {
+const Index = () => {
   return (
     <div>
       <Header/>
@@ -16,4 +16,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Index;
