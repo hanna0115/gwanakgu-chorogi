@@ -7,22 +7,22 @@ const Icons = () => {
     {
       title : '의류',
       icon : '/images/icon-clothes-9752702.png',
-      to : ''
+      to : '/clothes'
     },
     {
       title : '폐건전지‧형광등',
       icon : '',
-      to : ''
+      to : '/batteries-fluorescent lights'
     },
     {
       title : '네프론',
       icon : '',
-      to : ''
+      to : '/nephron'
     },
     {
       title : '기부하기',
       icon : '',
-      to : ''
+      to : '/donation'
     }
   ]
 
