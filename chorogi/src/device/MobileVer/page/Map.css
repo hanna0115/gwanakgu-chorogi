@@ -38,7 +38,7 @@
 .map {
   position: relative;
   width: 100%;
-  height: 44.8rem;
+  height: calc(100vh - 10.4rem);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, .1);
 }
 
@@ -50,6 +50,12 @@
   border-radius: 10px 10px 0 0;
   box-shadow: 0 -3px 5px rgba(0, 0, 0, .1);
   background-color: #fff;
+  transition: max-height 300ms ease-in-out;
+}
+
+.location-box.active {
+  height: 50%;
+  overflow: hidden;
 }
 
 .location-list-icon {
@@ -57,6 +63,7 @@
   justify-content: center;
   align-items: center;
   margin: 0.5rem 0;
+  cursor: pointer;
 }
 
 .location-list-icon svg {
@@ -64,8 +71,32 @@
   color: #ccc;
 }
 
+.location-box .location-list-icon svg:first-child,
+.location-box.active .location-list-icon svg:last-child {
+  display: block;
+}
+
+.location-box .location-list-icon svg:last-child,
+.location-box.active .location-list-icon svg:first-child {
+  display: none;
+}
+
+.location-list {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .location-item {
   margin: 10px 15px;
+}
+
+.location-item:not(:first-child) {
+  display: none;
+}
+
+.location-box.active .location-item:not(:first-child) {
+  display: block;
 }
 
 .location-info {
@@ -74,7 +105,43 @@
   align-items: center;
 }
 
-
 .location-info img {
-  width: 4.5rem;
+  width: 5rem;
+}
+
+.location-info p:first-child {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.location-info p span {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #108B52;
+}
+
+.location-info p:last-child {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.location-item-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.location-item-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.location-item-btn a:first-child {
+  margin-right: 1rem;
 }
