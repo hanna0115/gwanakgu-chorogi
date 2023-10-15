@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Map.css'
 import { Icon } from '@iconify/react';
 
 const Map = () => {
+  const [isActive, setIsActive] = useState('false');
+
+  const listToggle = () => {
+    setIsActive(active => !active);
+  }
+
   return (
     <div>
       <div className="map-title-box">
@@ -17,9 +23,9 @@ const Map = () => {
         </div>
       </div>
       <div className="map">
-        <div className="location-box">
-          <div className="location-list-icon">
-            <Icon icon="uiw:up" />
+        <div className={`location-box ${isActive ? 'active' : ''}`}>
+          <div className="location-list-icon" onClick={listToggle}>
+            <Icon icon="uiw:up" className='active' />
             <Icon icon="uiw:down" />
           </div>
           <ul className="location-list">
@@ -32,14 +38,90 @@ const Map = () => {
                 </div>
               </div>
               <div className="location-item-btn">
+                <Link to="">
+                    <Icon icon="solar:share-bold-duotone" />
+                    <span>공유하기</span>
+                </Link>
+                <Link to="">
+                    <Icon icon="fluent:directions-24-regular" />
+                    <span>길찾기</span>
+                </Link>
+              </div>
+            </li>
+            <li className="location-item">
+              <div className="location-info">
+                <img src="/images/Clothing collection box.png" alt="의류 수거함" />
                 <div>
-                  <Icon icon="solar:share-bold-duotone" />
-                  <Link to=""><button>공유하기</button></Link>
+                  <p>낙성대동-1 <span>300m</span></p>
+                  <p>서울특별시 관악구 관악로10길 15</p>
                 </div>
+              </div>
+              <div className="location-item-btn">
+                <Link to="">
+                    <Icon icon="solar:share-bold-duotone" />
+                    <span>공유하기</span>
+                </Link>
+                <Link to="">
+                    <Icon icon="fluent:directions-24-regular" />
+                    <span>길찾기</span>
+                </Link>
+              </div>
+            </li>
+            <li className="location-item">
+              <div className="location-info">
+                <img src="/images/Clothing collection box.png" alt="의류 수거함" />
                 <div>
-                  <Icon icon="fluent:directions-24-regular" />
-                  <Link to=""><button>길찾기</button></Link>
+                  <p>낙성대동-1 <span>300m</span></p>
+                  <p>서울특별시 관악구 관악로10길 15</p>
                 </div>
+              </div>
+              <div className="location-item-btn">
+                <Link to="">
+                    <Icon icon="solar:share-bold-duotone" />
+                    <span>공유하기</span>
+                </Link>
+                <Link to="">
+                    <Icon icon="fluent:directions-24-regular" />
+                    <span>길찾기</span>
+                </Link>
+              </div>
+            </li>
+            <li className="location-item">
+              <div className="location-info">
+                <img src="/images/Clothing collection box.png" alt="의류 수거함" />
+                <div>
+                  <p>낙성대동-1 <span>300m</span></p>
+                  <p>서울특별시 관악구 관악로10길 15</p>
+                </div>
+              </div>
+              <div className="location-item-btn">
+                <Link to="">
+                    <Icon icon="solar:share-bold-duotone" />
+                    <span>공유하기</span>
+                </Link>
+                <Link to="">
+                    <Icon icon="fluent:directions-24-regular" />
+                    <span>길찾기</span>
+                </Link>
+              </div>
+            </li>
+            <li className="location-item">
+              <div className="location-info">
+                <img src="/images/Clothing collection box.png" alt="의류 수거함" />
+                <div>
+                  <p>낙성대동-1 <span>300m</span></p>
+                  <p>서울특별시 관악구 관악로10길 15</p>
+                </div>
+              </div>
+              <div className="location-item-btn">
+                <Link to="">
+                    <Icon icon="solar:share-bold-duotone" />
+                    <span>공유하기</span>
+                </Link>
+                <Link to="">
+                    <Icon icon="fluent:directions-24-regular" />
+                    <span>길찾기</span>
+                </Link>
               </div>
             </li>
           </ul>
