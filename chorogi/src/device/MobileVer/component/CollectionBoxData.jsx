@@ -4,6 +4,7 @@ const Clothes = {
   title : '의류 수거함',
   slug : 'Clothes',
   img : '/images/Clothing collection box.png',
+  icon : '/images/marker-clothes.png',
   item : [
     {
       name : '낙성대동',
@@ -161,6 +162,7 @@ const BatteriesFluorescentlights = {
   title : '폐건전지, 형광등 수거함',
   slug : 'Batteries-Fluorescent-lights',
   img : '/images/battery.png',
+  icon : '/images/marker-battery.png',
   item : [
     {
       name : '보라매동주민센터',
@@ -232,6 +234,7 @@ let Nephron = {
   title : '분리수거하고 돈벌기',
   slug : 'Nephron',
   img : '/images/plastic bottle.png',
+  icon : '/images/marker-plastic.png',
   item : [
     {
       name : '낙성대동주민센터',
@@ -328,6 +331,7 @@ const Donation = {
   title : '가까운 곳에 기부하기',
   slug : 'Donation',
   img : '/images/donation.png',
+  icon : '/images/marker-heart.png',
   item : [
     {
     name : '굿윌스토어 밀알금천점',
