@@ -1,17 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faX } from "@fortawesome/free-solid-svg-icons";
+import { Icon } from '@iconify/react';
 
 const Header = () => {
-  /*const gnbIconBtn = document.querySelector('.gnb-icon-btn');
-  const sidebar = document.querySelector('.sidebar');
-  console.log(gnbIconBtn,sidebar); 
-  gnbIconBtn.addEventListener('click', function(){
-    sidebar.classList.add('is-active');
-  })*/
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  }
   return (
     <header>
       <nav>
@@ -20,14 +16,15 @@ const Header = () => {
             <img src="/images/logo_black.png" alt="logo-img" />
           </Link>
         </h1>
-        <div class="gnb-icon-btn">
-          <FontAwesomeIcon icon={faBars} />
+        <div className={`gnb-icon-btn ${!isOpen ? 'active' : ''}`} onClick={toggleSidebar}>
+          <Icon className="bars" icon="uil:bars" />
+          <Icon className="close" icon="ph:x" />
         </div>
       </nav>
-      <aside class="sidebar sm-only is-active">
-        <nav class="sidebar-nav">
-          <h2 class="visually-hidden">사이드바 메뉴</h2>
-          <ul class="side-menu-list">
+      <aside className={`sidebar ${!isOpen ? 'active' : ''}`}>
+        <nav className="sidebar-nav">
+          <h2 className="visually-hidden">사이드바 메뉴</h2>
+          <ul className="side-menu-list">
             <li><Link to=''>수거함 위치 알리미</Link>
               <ul className="side-menu-item">
                 <li><Link to=''>의류수거함</Link></li>
@@ -50,7 +47,6 @@ const Header = () => {
           </ul>
         </nav>
       </aside>
-
     </header>
   );
 };
