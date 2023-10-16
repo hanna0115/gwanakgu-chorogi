@@ -1,5 +1,5 @@
 footer {
-  padding: 15px;
+  padding: 1.5rem;
   color: #ffffff;
   background-color: #32785E;
 }
@@ -9,15 +9,16 @@ footer {
 }
 
 .wrapper img {
-  width: 60px;
+  object-fit: contain;
+  width: 6rem;
 }
 
 .wrapper p {
-  font-size: 10px; 
-  padding: 10px;
+  font-size: 1rem; 
+  padding: 1rem;
 }
 
 .footer-list li {
-  font-size: 5px;
-  text-align: center;
+  font-size: 0.7rem;
+  text-align: left;
 }
