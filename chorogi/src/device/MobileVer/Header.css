@@ -2,43 +2,71 @@
   display: none;
 }
 
-.sm-only {
-  display: none;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem;
 }
 
 .logo img {
-  width: 70px;
+  width: 7rem;
 }
 
 .gnb-icon-btn {
-  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
 }
 
-.sidebar  {
-  width: 380px;
-  height: 100vh;
-  position: fixed;
-  top: 50px;
-  right: 60px;
-  z-index: 10;
-  padding: 32px 120px;
+.gnb-icon-btn .bars,
+.gnb-icon-btn.active .close {
+  display: block;
+}
+
+.gnb-icon-btn.active .bars,
+.gnb-icon-btn .close {
+  display: none;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+  height: 100%;
+  padding-top: 1.5rem;
   background-color: #fff;
-  transform: translateX(-200px);
-  transition: transform 300ms ease-in-out;
+}
+
+.sidebar.active {
+  display: block;
+}
+
+.side-menu-list li {
+  margin-bottom: 3rem;
+}
+
+.side-menu-list > li {
+  margin-bottom: 4rem;
+}
+
+.side-menu-list > li:last-child {
+  margin-bottom: 0;
 }
 
 .side-menu-list a {
-  font-size: 16px;
+  padding: 3.0rem 0;
+  font-size: 1.8rem;
   color: rgba(47, 151, 58, 1);
 }
 
-.side-menu-item a {
-  font-size: 10px;
+.side-menu-item li {
+  margin: 1.5rem 0;
+}
+
+.side-menu-item li a {
+  font-size: 1.5rem;
   color: rgba(85, 85, 85, 1);
 }
