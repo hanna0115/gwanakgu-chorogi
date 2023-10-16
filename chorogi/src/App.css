@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
 :root {
   --main-txt-color: #32785E;
 }
@@ -25,7 +27,11 @@ button {
 html {
   position: relative;
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto; 
   font-size: 10px;
   color: #555;
+}
+
+body {
+  font-family: 'Nanum Gothic', sans-serif;
 }
