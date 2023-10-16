@@ -59,6 +59,7 @@
 }
 
 .slide-txt {
+  height: 100%;
   background-color: #fff;
   padding: 1.5rem;
 }
@@ -91,7 +92,7 @@
 
 .slick-dots li.slick-active button:before {
   color: #7ABD28;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .slick-dots li button:before {
