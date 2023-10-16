@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Index/>}>
             <Route index element={<HomePage/>} />
-            <Route path='map' element={<MapPage/>} />
+            <Route path=':mapSlug' element={<MapPage/>} />
             <Route path='detail' element={<Detail/>} />
           </Route>
         </Routes>
