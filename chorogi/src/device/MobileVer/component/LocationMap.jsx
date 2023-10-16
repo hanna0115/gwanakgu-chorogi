@@ -3,7 +3,6 @@ import { Map, MapMarker } from 'react-kakao-maps-sdk';
 
 const LocationMap = (props) => {
   const locationList = props.locationList;
-  console.log(locationList.item[0].lat)
 
   return (
     <Map // 지도를 표시할 Container
@@ -21,15 +20,16 @@ const LocationMap = (props) => {
     >
       {locationList.item.map((item, index) => {
         const latlng = { lat : item.lat, lng : item.lng };
+        const src = locationList.icon;
         
         return (
           <MapMarker
             key={index}
             position={latlng} // 마커를 표시할 위치
             image={{
-              src: "https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png", // 마커이미지의 주소입니다
+              src: locationList.icon, // 마커이미지의 주소입니다
               size: {
-                width: 24,
+                width: 30,
                 height: 35
               }, // 마커이미지의 크기입니다
             }}
