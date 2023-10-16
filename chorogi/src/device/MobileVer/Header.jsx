@@ -16,12 +16,12 @@ const Header = () => {
             <img src="/images/logo_black.png" alt="logo-img" />
           </Link>
         </h1>
-        <div className={`gnb-icon-btn ${!isOpen ? 'active' : ''}`} onClick={toggleSidebar}>
+        <div className={`gnb-icon-btn ${isOpen ? 'active' : ''}`} onClick={toggleSidebar}>
           <Icon className="bars" icon="uil:bars" />
           <Icon className="close" icon="ph:x" />
         </div>
       </nav>
-      <aside className={`sidebar ${!isOpen ? 'active' : ''}`}>
+      <aside className={`sidebar ${isOpen ? 'active' : ''}`}>
         <nav className="sidebar-nav">
           <h2 className="visually-hidden">사이드바 메뉴</h2>
           <ul className="side-menu-list">
