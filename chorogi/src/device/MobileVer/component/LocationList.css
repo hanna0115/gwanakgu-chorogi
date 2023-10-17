@@ -5,7 +5,8 @@
 }
 
 .location-item {
-  margin: 10px 15px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
 }
 
 .location-item:not(:first-child) {
