@@ -1,23 +1,17 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Index from './device/MobileVer/Index';
-import HomePage from './device/MobileVer/page/HomePage';
-import MapPage from './device/MobileVer/page/MapPage';
-import Detail from './device/MobileVer/page/Detail';
+// import './App.css';
+import { BrowserView, MobileView } from 'react-device-detect';
+import MobilePage from './MobilePage';
 
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Index/>}>
-            <Route index element={<HomePage/>} />
-            <Route path=':mapSlug' element={<MapPage/>} />
-            <Route path=':mapSlug/:detailSlug' element={<Detail/>} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <BrowserView>
+        데스크톱브라우져!
+        <MobilePage/>
+      </BrowserView>
+      <MobileView>
+      </MobileView>
     </div>
   );
 }
