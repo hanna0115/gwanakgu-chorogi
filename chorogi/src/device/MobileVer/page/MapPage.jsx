@@ -29,7 +29,7 @@ const MapPage = () => {
         </div>
         <div className="map-title-btn">
           <Link to="/"><Icon icon="uiw:left" /></Link>
-          <Link to=""><Icon icon="octicon:info-24" /></Link>
+          <Link to={`${locationList.detailSlug}`}><Icon icon="octicon:info-24" /></Link>
         </div>
       </div>
       <div className="map">
