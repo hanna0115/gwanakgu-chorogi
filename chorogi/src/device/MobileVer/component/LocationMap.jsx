@@ -1,14 +1,36 @@
-import React, { useState } from 'react';
-import { Map, MapMarker } from 'react-kakao-maps-sdk';
+import React, { useState,useEffect } from 'react';
+import { Map, MapMarker, EventMarkerContainer } from 'react-kakao-maps-sdk';
+import { useMap } from "@uidotdev/usehooks";
 
 const LocationMap = (props) => {
   const locationList = props.locationList;
-  // const [selectedMarker, setSeleteMarker] = useState();
 
+  const EventMarkerContainer = ({ position, index, onClick, isClicked }) => {
+    const map = useMap()
+    let marker = locationList.icon;
+    let changeMarker = locationList.selectedIcon;
+
+
+    if (isClicked) {
+      marker = changeMarker
+    }
+
+    return (
+      <MapMarker
+        position={position} // 마커를 표시할 위치
+        onClick={onClick}
+        image={{
+          src: marker,
+          size: {
+            width: 25,
+            height: 28
+          }
+        }}
+      ></MapMarker>
+    )
+  }
   
-  // if (isClicked) {
-  //   spriteOrigin = clickOrigin
-  // }
+  const [selectedMarker, setSeletedMarker] = useState()
 
   return (
     <Map // 지도를 표시할 Container
@@ -33,18 +55,19 @@ const LocationMap = (props) => {
             height: 28
           }, // 마커이미지의 크기입니다
         }
-        console.log(image)
+
         image = {...image, src : locationList.selectedIcon }
-        console.log(image)
         
         return (
-          <MapMarker
+          <EventMarkerContainer
             key={index}
             index={index}
             position={latlng} // 마커를 표시할 위치
             image={image}
-            // onClick={() => setSeleteMarker(index)}
-            // isClicked={selectedMarker === index}
+            onClick={() => {
+              setSeletedMarker(index)
+            }}
+            isClicked={selectedMarker === index}
           />
         )
       })}
