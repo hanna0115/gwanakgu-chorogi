@@ -53,7 +53,7 @@ const Slide = () => {
               <div className='slide-txt'>
                 <h1>학교에서</h1>
                 <p>친환경 소비를 실천하는 방법</p>
-                <Link>
+                <Link to='https://www.gihoo.or.kr/zerolife/menu.es?mid=a10202000000'>
                   <h3 className='slide-link'>자세히 보기 <Icon icon="akar-icons:link-out" /></h3>
                 </Link>
               </div>
@@ -68,7 +68,7 @@ const Slide = () => {
               <div className='slide-txt'>
                 <h1>기업에서</h1>
                 <p>친환경 소비를 실천하는 방법</p>
-                <Link>
+                <Link to='https://www.gihoo.or.kr/zerolife/menu.es?mid=a10202000000'>
                   <h3 className='slide-link'>자세히 보기 <Icon icon="akar-icons:link-out" /></h3>
                 </Link>
               </div>
