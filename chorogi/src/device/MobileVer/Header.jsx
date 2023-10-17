@@ -1,13 +1,25 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import './Header.css';
 import { Icon } from '@iconify/react';
 
 const Header = () => {
+  const { mapSlug } = useParams();
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   }
+
+  const closeSidebar = (mapSlug) => {
+    mapSlug = '' ? setIsOpen(true) : setIsOpen(false);
+  }
+  
+  useEffect(() => {
+    closeSidebar(mapSlug)
+  }, [mapSlug])
+
+  
   return (
     <header>
       <nav>
