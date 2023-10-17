@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './MapPage.css'
 import { Icon } from '@iconify/react';
-import collectionBoxData from '../component/CollectionBoxData';
+import { collectionBoxMapData, collectionBoxDetailData } from '../component/CollectionBoxData';
 import LocationMap from '../component/LocationMap';
 import LocationList from '../component/LocationList';
 
@@ -15,7 +15,7 @@ const MapPage = () => {
   }
 
   const getLocationList = (mapSlug) => {
-    return collectionBoxData.find((location) => location.slug === mapSlug);
+    return collectionBoxMapData.find((location) => location.slug === mapSlug);
   }
   
   const locationList = getLocationList(mapSlug);
