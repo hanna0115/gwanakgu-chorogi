@@ -34,7 +34,7 @@ const LocationMap = (props) => {
   }
 
   const listToggle = () => {
-    setIsActive(active => !active);
+    setIsActive(!isActive);
   }
 
   return (
