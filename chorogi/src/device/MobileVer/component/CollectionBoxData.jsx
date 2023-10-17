@@ -7,6 +7,7 @@ const Clothes = {
   slug : 'Clothes',
   img : '/images/Clothing collection box.png',
   icon : '/images/marker-clothes.png',
+  selectedIcon : '/images/marker-clothes-white.png',
   item : [
     {
       name : '낙성대동',
@@ -165,6 +166,7 @@ const BatteriesFluorescentlights = {
   slug : 'Batteries-Fluorescent-lights',
   img : '/images/battery.png',
   icon : '/images/marker-battery.png',
+  selectedIcon : '/images/marker-battery-white.png',
   item : [
     {
       name : '보라매동주민센터',
@@ -237,6 +239,7 @@ let Nephron = {
   slug : 'Nephron',
   img : '/images/plastic bottle.png',
   icon : '/images/marker-plastic.png',
+  selectedIcon : '/images/marker-plastic-white.png',
   item : [
     {
       name : '낙성대동주민센터',
@@ -334,6 +337,7 @@ const Donation = {
   slug : 'Donation',
   img : '/images/donation.png',
   icon : '/images/marker-heart.png',
+  selectedIcon : '/images/marker-heart-white.png',
   item : [
     {
     name : '굿윌스토어 밀알금천점',
