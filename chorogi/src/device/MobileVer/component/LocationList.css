@@ -13,6 +13,10 @@
   display: none;
 }
 
+.location-box.active .location-item:first-child {
+  display: none;
+}
+
 .location-box.active .location-item:not(:first-child) {
   display: block;
 }
