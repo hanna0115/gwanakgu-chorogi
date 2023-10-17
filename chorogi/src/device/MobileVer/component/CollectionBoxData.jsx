@@ -1,3 +1,5 @@
+import { Icon } from '@iconify/react';
+
 // 의류 수거함
 const Clothes = {
   menu : '수거함 위치 알리미',
@@ -342,6 +344,23 @@ const Donation = {
   ]
 }
 
-const collectionBoxData = [Clothes, BatteriesFluorescentlights, Nephron, Donation];
+const collectionBoxMapData = [Clothes, BatteriesFluorescentlights, Nephron, Donation];
 
-export default collectionBoxData;
+const collectionBoxDetailData = [
+  {
+    menu : '수거함 위치 알리미',
+    title : '의류 수거함',
+    slug : 'Clothes',
+    maianImg : '/images/Clothing collection box.png',
+    mainTitle : '의류수거함, 왜 필요한가요?',
+    mainContent : '의류수거함은 옷과 신발 등을 재활용, 재사용하며 탄소 배출을 줄이고 있어요.',
+    subIcon1 : <Icon icon="ic:outline-circle" />,
+    subTitle1 : '넣어도 돼요!',
+    subContent1 : '의류, 신발, 일반가방, 담요, 누비이불, 커튼, 카펫 등 오물이 묻지 않은 것을 넣어주세요.',
+    subIcon2 : <Icon icon="bx:x" />,
+    subContent2 : '넣으면 안돼요!',
+    subContent2 : '솜이불, 베개, 방석, 롤러스케이트, 바퀴가방 등을 넣으면 안돼요. 해당 품목들은 대형폐기물 배출 및 재활용품 배출 방법에 의거하여 배출해주세요.'
+  }
+]
+
+export {collectionBoxMapData, collectionBoxDetailData};
