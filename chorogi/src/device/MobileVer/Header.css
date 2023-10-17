@@ -45,12 +45,15 @@ nav {
   display: block;
 }
 
-.side-menu-list li {
-  margin-bottom: 4rem;
+.side-menu-list h3 {
   font-weight: 700;
 }
 
-.side-menu-list > li:last-child {
+.side-menu-item {
+  margin-bottom: 4rem;
+}
+
+.side-menu-item:last-child {
   margin-bottom: 0;
 }
 
