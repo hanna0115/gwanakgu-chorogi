@@ -1,0 +1,46 @@
+.loding-box {
+  width: 320px;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  z-index: 999;
+  animation: softRemove 1s 1s forwards;
+}
+
+@keyframes softRemove {
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.logo {
+  width: 17rem;
+  margin-top: 50px;
+}
+
+.mascot {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,-10%);
+  width: 26rem;
+  margin-top: 220px;
+  z-index: 10;
+}
+
+.earth {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-20%,0%);
+  width: 47rem;
+}
+
