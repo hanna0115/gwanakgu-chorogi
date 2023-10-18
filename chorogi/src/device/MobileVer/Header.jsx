@@ -5,9 +5,11 @@ import { Icon } from '@iconify/react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   }
+  
   return (
     <header>
       <nav>
@@ -27,13 +29,13 @@ const Header = () => {
           <ul className="side-menu-list">
             <li className="side-menu-item">
               <h3><Link to=''>수거함 위치 알리미</Link></h3>
-              <p><Link to='/Clothes'>의류수거함</Link></p>
-              <p><Link to='/Batteries-Fluorescent-lights'>폐건전지, 형광등</Link></p>
+              <p onClick={toggleSidebar}><Link to='/Clothes'>의류수거함</Link></p>
+              <p onClick={toggleSidebar}><Link to='/Batteries-Fluorescent-lights'>폐건전지, 형광등</Link></p>
             </li>
             <li className="side-menu-item">
               <h3><Link to=''>지구 살리기 Tip!</Link></h3>
-              <p><Link to='/Nephron'>분리수거하고 돈벌기</Link></p>
-              <p><Link to='/Donation'>가까운 곳에 기부하기</Link></p>
+              <p onClick={toggleSidebar}><Link to='/Nephron'>분리수거하고 돈벌기</Link></p>
+              <p onClick={toggleSidebar}><Link to='/Donation'>가까운 곳에 기부하기</Link></p>
             </li>
             <li className="side-menu-item">
               <h3><Link to=''>탄소중립이란?</Link></h3>

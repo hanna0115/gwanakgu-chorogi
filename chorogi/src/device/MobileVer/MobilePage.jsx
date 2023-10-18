@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Index from './device/MobileVer/Index';
-import HomePage from './device/MobileVer/page/HomePage';
-import MapPage from './device/MobileVer/page/MapPage';
-import Detail from './device/MobileVer/page/Detail';
+import './MobilePage.css';
+import Index from './Index';
+import HomePage from './page/HomePage';
+import MapPage from './page/MapPage';
+import DetailPage from './page/DetailPage';
 
 
 function MobilePage() {
@@ -14,9 +14,8 @@ function MobilePage() {
           <Route path='/' element={<Index/>}>
             <Route index element={<HomePage/>} />
             <Route path=':mapSlug' element={<MapPage/>} />
-            <Route path=':mapSlug/:detailSlug' element={<Detail/>} />
+            <Route path=':mapSlug/:detailSlug' element={<DetailPage/>} />
           </Route>
-          
         </Routes>
       </BrowserRouter>
     </div>

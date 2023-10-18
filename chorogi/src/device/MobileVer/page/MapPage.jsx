@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import './MapPage.css'
 import { Icon } from '@iconify/react';
-import { collectionBoxMapData } from '../component/CollectionBoxData';
+import { collectionBoxMapData } from '../../CollectionBoxData';
 import LocationMap from '../component/LocationMap';
 
 

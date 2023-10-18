@@ -1,6 +1,5 @@
-// import './App.css';
 import { BrowserView, MobileView } from 'react-device-detect';
-import MobilePage from './MobilePage';
+import MobilePage from './device/MobileVer/MobilePage';
 import Loding from './device/MobileVer/page/Loding';
 
 
