@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
-import './Detail.css';
+import './DetailPage.css';
 import { Icon } from '@iconify/react';
-import { collectionBoxDetailData } from '../component/CollectionBoxData';
+import { collectionBoxDetailData } from '../../CollectionBoxData';
 
 
-const Detail = () => {
+const DetailPage = () => {
   const { detailSlug } = useParams();
 
   const getContents = (detailSlug) => {
@@ -51,4 +51,4 @@ const Detail = () => {
   );
 };
 
-export default Detail;
+export default DetailPage;
