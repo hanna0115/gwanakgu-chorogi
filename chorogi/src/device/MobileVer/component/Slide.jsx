@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Slider from 'react-slick';
