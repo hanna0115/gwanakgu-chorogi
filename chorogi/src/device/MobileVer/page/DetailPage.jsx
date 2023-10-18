@@ -30,19 +30,19 @@ const DetailPage = () => {
           <Link><Icon icon="uiw:left" /></Link>
         </div>
       </div>
-      <div class="box-list">
-        <div class="box-item">
+      <div className="detail-list">
+        <div className="detail-item">
           <img src={contents.mainImg} alt={contents.title} />
           <h2>{contents.mainTitle}</h2>
           <p>{contents.mainContent}</p>
         </div>
-        <div class="box-item">
-          <Icon icon="ic:outline-circle" width="80px" color="5B92FB"/>
+        <div className="detail-item">
+        <img src={contents.subIcon1} alt={contents.title} />
           <span>{contents.subTitle1}</span>
           <p>{contents.subContent1}</p>
         </div>
-        <div class="box-item">
-          <Icon icon="ph:x-bold" width="80px" color="FF1212"/>
+        <div className="detail-item">
+        <img src={contents.subIcon2} alt={contents.title} />
           <span>{contents.subTitle2}</span>
           <p>{contents.subContent2}</p>
         </div>
