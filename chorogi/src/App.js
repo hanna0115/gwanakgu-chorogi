@@ -7,11 +7,12 @@ function App() {
   return (
     <div className="App">
       <BrowserView>
-      <Loding/>
-      <MobilePage/>
+        <Loding/>
+        <MobilePage/>
       </BrowserView>
       <MobileView>
-     
+        <Loding/>
+        <MobilePage/>
       </MobileView>
     </div>
   );
